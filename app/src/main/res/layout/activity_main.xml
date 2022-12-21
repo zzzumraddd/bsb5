@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <ImageView
+        android:layout_marginLeft="-5dp"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21.5dp"
+            android:fontFamily="@font/ceraproblack"
+            android:text="Your Order"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/tv1"
+            android:src="@drawable/ic_baseline_local_mall_24" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_cancel_24" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#FEEBC1"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/cdrv">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/img_1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/img_2" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_3" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginBottom="21dp"
+                    android:src="@drawable/img_4" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Satya Nilayam"
+                    android:textColor="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginStart="5dp"
+
+                    android:layout_toRightOf="@id/imageView2"
+                    android:text="21-42-34, Banjara Hills,"
+                    android:textColor="#686868"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:text="Hyderabad, 500072"
+                    android:textColor="#686868"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:layout_marginBottom="11dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="30 min"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Address"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+                <TextView
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule Time"
+                    android:layout_below="@id/tv7"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_below="@id/cdrv"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+           android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/img_5" />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="7dp"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Fried Rice"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_below="@+id/tv10"
+                    android:id="@+id/tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="10sp"
+                    android:text="Pista House"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_below="@+id/tv11"
+                    android:id="@+id/tv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="11sp"
+                    android:text="User 1"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/img_6" />
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              >
+              <TextView
+                  android:id="@+id/tv13"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="5dp"
+                  android:layout_marginTop="7dp"
+               android:textSize="10sp"
+                  android:fontFamily="@font/poppinsbold"
+                  android:text="Jollof Rice"
+                  android:textColor="@color/black" />
+              <TextView
+                  android:layout_below="@+id/tv13"
+                  android:id="@+id/tv14"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="5dp"
+                  android:textSize="10sp"
+                  android:text="Suhani's stop"
+                  android:textColor="@color/black" />
+              <TextView
+                  android:layout_below="@+id/tv14"
+                  android:id="@+id/tv15"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="5dp"
+                  android:textSize="11sp"
+                  android:text="User 2"
+                 android:textColor="@color/black" />
+          </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="15dp"
+        app:strokeColor="#EA6435"
+        app:strokeWidth="2dp"
+
+
+        >
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EA6435"
+            android:text=" - 1 +"
+            />
+    </com.google.android.material.card.MaterialCardView>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="$100"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:layout_weight="1"
+    app:cardCornerRadius="15dp"
+    app:strokeColor="#EA6435"
+    app:strokeWidth="2dp"
+
+
+    >
+<TextView
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#EA6435"
+    android:text=" - 1 +"
+    />
+</com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="$125"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:padding="15dp"
+            >
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_7"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_8"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_9"
+                    android:layout_weight="0.5"
+                    /><TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Cart"
+                android:textColor="#EA6435"
+                />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_10"
+                android:layout_weight="1"
+
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
